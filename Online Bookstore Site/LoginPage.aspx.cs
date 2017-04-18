@@ -19,10 +19,13 @@ public partial class LoginPage : System.Web.UI.Page
         UsernameError.Visible = false;
         PasswordError.Visible = false;
         LoginLabel.Visible = false;
-        
-        using (StreamReader sr = new StreamReader("C:/Users/Broderick/Documents/School/Fourth Semester/Intro to Software Engineering/Online Bookstore Site/studentsdata.txt"))
+
+        string fileName = "studentsdata.txt";
+        string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+
+        using (StreamReader sr = new StreamReader(path))
         {
-            
+
 
             string currentLine;
             // currentLine will be null when the StreamReader reaches the end of file            
