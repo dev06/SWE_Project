@@ -161,12 +161,15 @@ public partial class Home : System.Web.UI.Page
         //}
 
 
+        string fileName = "books.csv";
+        string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+
         //THIS WORKS
-        using (TextFieldParser parser = new TextFieldParser(@"C:/Users/Broderick/Documents/School/Fourth Semester/Intro to Software Engineering/Online Bookstore Site/books.csv"))
+        using (TextFieldParser parser = new TextFieldParser(path))
         {
             parser.HasFieldsEnclosedInQuotes = true;
             parser.TextFieldType = FieldType.Delimited;
-            parser.SetDelimiters(",");            
+            parser.SetDelimiters(",");
 
             while (!parser.EndOfData)
             {
