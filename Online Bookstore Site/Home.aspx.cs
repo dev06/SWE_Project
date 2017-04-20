@@ -12,8 +12,9 @@ public partial class Home : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //Session.Clear();
-
         //Check if logged in
+        Console.WriteLine("asdfadf");
+
         if (Session["LoggedFirstName"] != null)
         {
             //User is logged in
@@ -244,8 +245,10 @@ public partial class Home : System.Web.UI.Page
 
     protected void SearchButton_Click(object sender, ImageClickEventArgs e)
     {
+
         SearchBox.Visible = false;
-        System.Diagnostics.Debug.Write("test output");
+      
+  
     }
         
     protected void TeacherDropDownList_SelectedIndexChanged(object sender, EventArgs e)

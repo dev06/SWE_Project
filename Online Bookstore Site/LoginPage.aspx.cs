@@ -4,12 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Diagnostics; 
 using System.Web.UI.WebControls;
 
 public partial class LoginPage : System.Web.UI.Page
 {   List<Person> Profiles = new List<Person>();
     protected void Page_Load(object sender, EventArgs e)
     {
+            
         LogoutButton.Visible = false;
         //Hiding other search types
         CourseDropDownList.Visible = false;
@@ -22,6 +24,8 @@ public partial class LoginPage : System.Web.UI.Page
 
         string fileName = "studentsdata.txt";
         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+
+
 
         using (StreamReader sr = new StreamReader(path))
         {

@@ -104,7 +104,7 @@
             </tr>
             <tr>
                 <td class="auto-style6" colspan="2">&nbsp;&nbsp; <a href="Home.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About&nbsp;</td>
-                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style12"></td>
             </tr>
             <tr>
                 <td class="auto-style7" colspan="3"></td>
